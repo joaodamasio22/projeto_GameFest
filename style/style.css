@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
+:root{
+    --fonte-principal: ("Orbitron");
+    --cor-fundo: #0d0d0d;
+    --cor-texto: #ffffff;
+    --cor-primaria: #00d4ff;
+    --cor-primaria-escura: #0050ff;
+    --cor-cabecalho: #111111;
+    --cor-cartao-fundo: #1a1a1a;
+    --sombra: 0 0 0.625rem var(--cor-primaria);
+    --sombra-hover: 0 0 1.25rem var(--cor-primaria), 0 0 2.5rem var(var(--cor-primaria-escura));
+    --fonte-size: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+}
+
+.imagem__logo{
+    width: 150px;
+    height: auto;
+    
+}
+
+
+
+.container__cabecalho{
+    display: flex;
+    margin-bottom: var(--cor-primaria);
+}
+
+.navegacao__cabechalho{
+    margin-left: 60%;
+    margin-top: 40px;
+}
+
+.links__navegacao{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: var(--fonte-size);
+    color: var(--cor-texto);
+    font-size: 20px;
+    font-family: "Orbitron";
+}
+
+.primario{
+    border-top: var(--cor-primaria);
+}
+.titulo__primario{
+    font-size: 48px;
+    text-align: center;
+    font-family: "orbitron";
+    color: var(--cor-texto);
+    margin-top: 40px;
+}
+
+.botao__primario{
+    margin-top: 10px;
+    margin-left: 40%;
+    padding: 10px 20px;
+    border-radius: 80px;
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-primaria-escura));
+    color: var(--cor-texto);
+    cursor: pointer;
+    box-shadow: var(--sombra);
+}
+
+.botao__primario:hover,
+.botao__inf:hover,
+.botao__ingresso:hover,
+.botao__inscrever:hoverx{
+    text-decoration: underline;
+    box-shadow: var(--sombra-hover);
+}
+
+.subtitulo_segundario{
+    text-align: center;
+    font-family: "orbitron";
+    color: var(--cor-texto);
+    font-size: 24px;
+    margin-top: 100px;
+}
+
+.imagens__segundario{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.imagens__segundario img{
+    margin-left: 20px;
+    border-radius: 10px;
+    
+}
+
+.imagem__segundario:hover{
+    
+}
+
+.imagem_espaco{
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.imagem_espaco:hover{
+    transform: translate(-10px);
+}
+
+.botao__informacao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao__inf{
+    margin-top: 80px;
+    margin-left: 1.2rem;
+    padding: 20px 70px 20px 20px;
+    background-color: var(--cor-cartao-fundo);
+    color: var(--cor-texto);
+    border-radius: 10px;
+    font-family: "Orbitron";
+    box-shadow: var(--sombra);
+    cursor: pointer;
+    
+}
+.ingressos{
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 30px;
+    font-family: "Orbitron";
+    margin-top: 70px;
+}
+
+.container__ingresso{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-texto);
+   
+
+}
+
+.container__comum,
+.container__vip{
+    padding: 20px;
+    background-color: var(--cor-cartao-fundo);
+    border: none;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.container__comum p,
+.container__vip p{
+    margin-bottom: 15px;
+    font-family: "Orbitron";
+    font-size: 16px;
+}
+
+.botao__ingresso{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-primaria-escura));
+    cursor: pointer;
+    box-shadow: var(--sombra);
+    color: var(--cor-texto);
+}
+
+.container__inscrever{
+    text-align: center;
+    color: var(--cor-texto);
+    margin-top: 100px;
+}
+
+.container__inscrever h2{
+    font-family: "Orbitron";
+}
+
+.usuario{
+
+    background-color: red;
+
+}
+.usuario-nome input,
+.usuario-email input {
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.rodape{
+    text-align: center;
+    color: var(--cor-texto);
+    font-family: "Orbitron";
+    margin-top: 50px;
+    border-color: #111111;
+}
+
+.botao__inscrever{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-primaria-escura));
+    cursor: pointer;
+    box-shadow: var(--sombra);
+    color: var(--cor-texto);
+    margin-left: 46%;
+    margin-top: 10px;
+}
